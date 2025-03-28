@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag & Turn - Eco-Friendly Printing & Publishing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="index.html" class="logo">
+                        <img src="./Tag & Turn Logo.jpg" alt="Tag & Turn Logo">
+                    </a>
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="product.html" class="nav-link">Products</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="cart.html" class="nav-link cart-link">
+                            <i data-feather="shopping-cart"></i>
+                            <span id="cart-count" class="cart-count">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Sustainable Printing for a Greener Tomorrow</h1>
+                        <p class="hero-subtitle">Eco-friendly bookmarks, apparel, bags, banners, and art prints crafted with care for the planet and your creative vision</p>
+                        <div class="hero-cta">
+                            <a href="product.html" class="btn btn-primary">
+                                <i data-feather="shopping-bag"></i>
+                                Browse Collection
+                            </a>
+                            <a href="about.html" class="btn btn-secondary">
+                                <i data-feather="info"></i>
+                                Our Sustainability Story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="features">
+                <div class="container">
+                    <h2 class="section-heading">Why Choose Tag & Turn</h2>
+                    <p class="section-subheading">We combine high-quality printing with eco-conscious practices to deliver products you can feel good about</p>
+                    <div class="feature-grid">
+                        <div class="feature">
+                            <i data-feather="leaf" class="feature-icon"></i>
+                            <h3>Eco-Friendly Materials</h3>
+                            <p>Sustainably sourced materials and eco-conscious printing processes that minimize environmental impact</p>
+                        </div>
+                        <div class="feature">
+                            <i data-feather="edit-3" class="feature-icon"></i>
+                            <h3>Custom Design Services</h3>
+                            <p>Personalized products crafted to your specifications with attention to every detail</p>
+                        </div>
+                        <div class="feature">
+                            <i data-feather="package" class="feature-icon"></i>
+                            <h3>Diverse Product Range</h3>
+                            <p>From functional bookmarks to eye-catching banners and custom apparel for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <img src="./Tag & Turn Logo.jpg" alt="Tag & Turn Logo">
+                        <p>&copy; 2025 Tag & Turn. All rights reserved.</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            feather.replace();
+            
+            // Add animation delay to features
+            const features = document.querySelectorAll('.feature');
+            features.forEach((feature, index) => {
+                feature.style.animationDelay = `${index * 0.2}s`;
+                feature.style.animation = `fadeIn 0.8s ease-out forwards`;
+                feature.style.opacity = "0";
+            });
+        });
+    </script>
+</body>
+</html>
